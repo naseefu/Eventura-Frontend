@@ -25,7 +25,7 @@ function MapComponent({ placeName }) {
         const response = await fetch(
           `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
             placeName
-          )}&key=AIzaSyDnqwM8uyAVvUyNrWCbe9Ugiu5ESbTrsAc`
+          )}&key=api_key`
         );
         const data = await response.json();
 
@@ -51,7 +51,7 @@ function MapComponent({ placeName }) {
   }, [placeName]);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDnqwM8uyAVvUyNrWCbe9Ugiu5ESbTrsAc">
+    <LoadScript googleMapsApiKey="api_key">
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={5}
