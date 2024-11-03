@@ -1,0 +1,43 @@
+.pay-user{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  padding: 20px 40px 40px 40px;
+  font-family: sans-serif;
+
+}
+.pay-user .prices{
+  display: flex;
+  justify-content: space-between;
+}
+.pay-user .payment-part{
+  background-color: rgba(223, 223, 223, 0.144);
+  padding: 20px;
+  border-radius: 20px;
+}
+.pay-user .paymentbtn{
+  border: none;
+  width: 80%;
+  padding: 10px 0;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+}
+
+.pay-user .paymentbtn:hover{
+  /* box-shadow: 1px 1px 20px rgb(225, 0, 255); */
+  background-color: rgb(255, 0, 76);
+  /* transform: scale(1.05,1.05); */
+}
+.pay-user .ticketquantity{
+
+  border: 1px solid rgb(214, 214, 214);
+  width: 30%;
+  height: 40px;
+
+}
+.pay-user .ticketquantity:focus{
+  outline-color: blue;
+}

@@ -1,0 +1,52 @@
+.scroll-container {
+  height: fit-content;
+  display: flex;
+  overflow: hidden;
+  
+}
+
+.carousel-primary,
+.carousel-secondary {
+  top: 26%;
+  left: 100%;
+  min-width: fit-content;
+  overflow: hidden;
+  /* position: absolute; */
+  position: relative;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  white-space: calc(0%);
+}
+
+.carousel-primary img,
+.carousel-secondary img {
+  width: 290px;
+  margin-left: 20px;
+  border-radius: 10px;
+  filter: brightness(0.5);
+}
+
+.carousel-primary {
+  display: flex;
+  justify-content: space-around;
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-secondary {
+  animation: scroll 40s linear infinite;
+  animation-delay: 0s;
+}
+
+@keyframes scroll {
+
+  0% {
+    left: 0%;
+
+  }
+
+  100% {
+    left: -100%;
+  }
+
+}

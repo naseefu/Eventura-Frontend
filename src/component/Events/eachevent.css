@@ -1,0 +1,211 @@
+body::-webkit-scrollbar{
+  width: none;
+  scrollbar-width: none;
+}
+
+.eachevent{
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a37ff2d;
+    background-blend-mode: overlay;
+  color: white;
+  border: none;
+  padding: 20px;
+}
+/* 
+.maineach{
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+} */
+
+.eachevent .card1{
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eachevent .underline{
+  height: 0.5px;
+  width: 90%;
+  background-color: rgb(107, 107, 107);
+  margin: 10px 0;
+}
+.eachevent .overview button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  border: none;
+}
+.eachevent .overview button:hover{
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+.eachevent .overview{
+  width: 90%;
+}
+.eachevent .overview h1{
+  font-size: 30px;
+  font-family: serif;
+  padding: 20px 0;
+}
+.eachevent .overview h3{
+  font-family: sans-serif;
+}
+
+.eachevent .overview p{
+  line-height: 25px;
+}
+.eachevent .overview{
+  padding: 0px 0px 10px 0;
+}
+.eachevent .logo img{
+  height: 35px;
+  padding-bottom: 30px;
+}
+.eachevent .title p{
+  font-size: 13px;
+}
+
+.eachevent .desc{
+  padding: 40px;
+}
+.eachevent .eachevent2{
+  position: relative;
+  background-color: transparent;
+  /* backdrop-filter: blur(40px); */
+  padding-top: 15px;
+}
+.eachevent .eacheventmain{
+  backdrop-filter: blur(20px);
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.eachevent2 .gohome{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  margin: 15px;
+  border-radius: 10px;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform-origin: center;
+}
+.eachevent2 .gohome span{
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 3px;
+}
+.eachevent2 .gohome span .arrow{
+  transition: all 0.5s ease;
+}
+.eachevent2 .gohome:hover{
+  transform: scaleX(1.06);
+  span .arrow{
+    transform: rotate(360deg);
+  }
+}
+
+.eachevent .desc p{
+  color: rgb(255, 255, 255);
+}
+.eachevent .desc .message p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "mainfont",sans-serif;
+}
+.eachevent .desc .about p{
+  color: rgb(255, 255, 255);
+  line-height: 25px;
+}
+.eachevent td {
+  border-right: 1px solid rgb(56, 56, 56);
+  padding: 8px;
+  border-bottom: 1px solid rgb(56, 56, 56);
+}
+.eachevent table{
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 10px;
+}
+
+.eachevent td:last-child {
+  border-right: none;
+}
+.eachevent tr:last-child td {
+  border-bottom: none;
+}
+
+.eachevent table{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.eachevent td{
+  padding: 10px 10px;
+}
+.eachevent td p{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 12px;
+}
+.eachevent td p span{
+  size: 10;
+}
+.eachevent .rec-event{
+  display: flex;
+  gap:0.5rem;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 20px 30px;
+}
+.eachevent .recommendations h2{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "mainfont";
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+.eachevent .rec-event::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.eachevent .rec-event .recommendation{
+  min-height: 200px;
+  min-width:200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.315);
+  background-blend-mode: overlay;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  perspective: 9999;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.eachevent .eachevent2 .rec-event .recommendation:hover{
+  transform: scale(1.1,1.1);
+  z-index: 999;
+}

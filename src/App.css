@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: "mainfont";
+  src: url("./component/fonts/HelveticaNeue-Medium.otf")format("opentype");
+}

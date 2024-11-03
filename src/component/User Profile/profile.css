@@ -1,0 +1,161 @@
+.profile{
+  padding: 40px 60px;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.fullprofile{
+  max-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.profile h1{
+  font-family: sans-serif;
+}
+
+.profile .profilenav{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.profile .profiles{
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+  padding: 50px 0;
+}
+.profile .profilebtn{
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+}
+.profile .active{
+  color: blue;
+  background-color: rgba(0, 0, 255, 0.096);
+  border-radius: 20px;
+}
+.profile .rightline{
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}
+
+.profile .profileoutlet{
+  border-left: 1px solid rgb(207, 207, 207);
+    padding-left: 3rem;
+    min-height: 50vh;
+}
+.profile .profileoutlet h1{
+  font-size: 22px;
+  font-family: "mainfont";
+  font-weight: lighter;
+}
+
+.userprofile .userdetails h3{
+  font-size: 15px;
+  font-family: "mainfont";
+  font-weight: lighter;
+}
+.userprofile .profile2,.userprofile .profile1{
+  border: 1px solid rgb(231, 231, 231);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 20px 0;
+}
+.userprofile .userdetails p{
+  color: grey;
+  font-size: 14px;
+  padding: 1px 0;
+}
+.userprofile .userdetails input{
+  height: 35px;
+  padding-left: 10px;
+  width: 50%;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 10px;
+}
+.userprofile .userdetails input:focus{
+  outline: 2px solid blue;
+}
+.userprofile .newuser button{
+
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+.userprofile .newuser button:hover{
+  transform: scale(1.1,1.1);
+}
+.userprofile .newuser .buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.host .hostevent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.host .hostevent .hostevent1{
+  display: flex;
+  gap: 1rem;
+}
+
+.host{
+  max-height: 70vh;
+  overflow: auto;
+}
+.host::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.host .hostevent{
+  border: 1px solid rgb(222, 222, 222);
+  padding: 40px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.host .hostevent2 p{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(222, 222, 222);
+}
+.host .hostevent2 button{
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.host .hostevent2 button:hover{
+  background-color: red;
+}
+
+/* .fullprofile .profileoutlet{
+  overflow: auto;
+} */
+
+.fullprofile .profileoutlet::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.booking-user .book{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+  border: 1px solid rgb(224, 224, 224);
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}

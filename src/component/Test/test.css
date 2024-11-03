@@ -1,0 +1,61 @@
+
+.container {
+  width: 50vw;
+  height: 500px;
+  background-color: #3DDC97;
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  
+}
+
+/* Half Circle Cutout */
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  /* Background color to match the page */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  bottom: 200px;
+  /* Position from the bottom of the container */
+}
+
+/* Left Half Circle Cut */
+.container::before {
+  left: -50px;
+  /* Move left to overlap the container */
+}
+
+/* Right Half Circle Cut */
+.container::after {
+  right: -50px;
+  /* Move right to overlap the container */
+}
+
+.eachbooking button{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 10px 15px;
+  width: 30vw;
+  text-align: center;
+  justify-content: space-between;
+  border: none;
+  background-color: #2B59C3;
+  color: white;
+  margin: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.eachbooking button:hover{
+
+  background-color: blue;
+
+}

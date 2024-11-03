@@ -1,0 +1,231 @@
+.register .reg1{
+  background-color: #3a37ff2d;
+  background-image: url("../images/grad11.jpg");
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  margin: auto 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.register{
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  padding: 0 0 0 10px;
+  color: white;
+  max-height: 100vh;
+  justify-content: center;
+}
+.register .reg1 .logo img{
+  height: 40px;
+}
+
+.register .reg1{
+  padding:10px 30px;
+}
+.register .reg1 p{
+  line-height: 30px;
+  font-size: 15px;
+}
+.register .reg1 h1{
+  font-family: sans-serif;
+}
+.reg1 .dots{
+  display: flex;
+  gap: 1rem;
+}
+
+.reg1 .dot{
+  height: 6px;
+  width: 5px;
+  background-color: rgb(148, 148, 148);
+  border-radius: 10px;
+}
+
+.reg1 .feedcard{
+  background-color: #2420e2;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.reg1 .feeddot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reg1 .feedcard .feeduser{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reg1 .feedcard .feeduser h3{
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.register .reg2{
+  padding: 50px 50px;
+}
+.register .reg2 .looks{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.register .reg2 .looks label{
+  border: 2px solid rgb(211, 211, 211);
+  padding: 12px 10px;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+.register label{
+  font-size: 14px;
+}
+
+.reg2 p{
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+  border-color: #3b37ff;
+  color: #3a37ff18;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #3b37ff;
+  border-radius: 50%;
+}
+.reg2{
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.reg2 h1{
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+.reg2 .userdet{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.reg2 .userdet .user1{
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.reg2 .userdet .user1 input{
+  height: 35px;
+  width: 70%;
+  border:1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.reg2 input:focus,.reg2 select:focus{
+
+  outline:2px solid #3b37ff;
+
+}
+.reg2 .userdet .user1 select{
+  height: 35px;
+    width: 70%;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.reg2 .userdet .user2{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;}
+
+  .register .registernow{
+    margin: 30px 0;
+    text-align: center;
+    width: 70%;
+  }
+    .register .registernow button{
+      padding: 12px 30px;
+      border: none;
+      color: white;
+      background-color:#3b37ff ;
+      transition: all 0.3s ease;
+      transform-origin: center;
+      cursor: pointer;
+    }
+
+.register .registernow button:hover{
+  background-color: #2420e2;
+  transform: scale(1.1,1.1);
+}
+
+.register .signin1{
+  margin: auto 0;
+}
+.register .loginbtn button{
+
+  width: 15vw;
+  border-radius: 10px;
+
+}
+.reg1 .logo p{
+  display: flex;
+  align-items: center;
+  background-color: #2420e2;
+  justify-content: space-between;
+  padding: 6px 10px;
+  gap: 0.4rem;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reg1 .logo p:hover{
+  transform: scale(1.1,1.1);
+}
+
+.reg1 .logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reg1 .arrow{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+}

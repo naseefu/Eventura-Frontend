@@ -1,0 +1,49 @@
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: row;
+
+}
+
+.loading .box{
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  background-color: black;
+  animation:rotate 1s ease-in infinite;
+  perspective: 9999;
+}
+.loading p{
+  margin: 0;
+  padding: 20px;
+  font-weight: lighter;
+  font-family:sans-serif;
+  font-size: 13px;
+}
+.loading .span1{
+  animation: widt 0.6s 10s ease-in-out infinite;
+}
+.loading .span2 {
+  animation: widt 0.6s 0.6s ease-in-out infinite;
+}
+
+@keyframes widt {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}

@@ -1,0 +1,164 @@
+.event-host .event-host1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+
+}
+.event-host .event-hosts{
+  min-height: 90vh;
+  margin: auto 0;
+  /* width: 100%; */
+  background-color: rgba(245, 245, 245, 0.9);
+  border-radius: 20px;
+  width: 25vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: rotate(300deg);
+  background-blend-mode: overlay;
+}
+
+.event-host h1{
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.event-host{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+  gap: 1rem;
+}
+
+.event-host .event-host1 .steps{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: grey;
+  cursor: default;
+}
+.event-host .event-host1 .steps .p2{
+  font-weight: normal;
+  margin: 0;
+  font-size: 12px;
+}
+.event-host .event-host1 .steps .p1{
+  font-weight: normal;
+  font-size: 13px;
+  font-family: "mainfont";
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.event-host-main{
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.event-host .event-host1 .steps .logo{
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 5px grey;
+  z-index: 1000;
+}
+.event-host .main-input{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin-top: 40px;
+  gap: 1rem;
+}
+
+.event-host .eventsteps{
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+
+.event-host .eventsteps .underline{
+  width: 2px;
+  height: 80%;
+  z-index: 1;
+  margin: auto 0;
+  margin-left: 17px;
+  margin-top: 28px;
+  background-color: rgba(126, 126, 126, 0.473);
+  position: absolute;
+}
+
+.event-host .main-input .inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 25px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.event-host .main-input .inputs input{
+  width: 30vw;
+  height: 30px;
+  border: 1px solid rgb(230, 230, 230);
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.event-host .main-input .inputs input:focus{
+  outline-color: blue;
+}
+.event-host .next{
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.74);
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+.event-host .finish{
+  background-color: rgb(0, 214, 0);
+}
+
+.event-host .buttons .next:hover{
+  background-color: rgba(0, 0, 255, 0.567);
+  transform: scale(1.05,1.05);
+}
+.event-host .back{
+  background-color: rgb(234, 0, 255);
+}
+.event-host .buttons .back:hover{
+  background-color: rgba(171, 0, 187, 0.767);
+}
+.event-host .buttons .finish:hover{
+  background-color: rgb(0, 235, 0);
+}
+
+.event-host .event-host2{
+  max-height: 95vh;
+  overflow: auto;
+}
+
+.event-host .event-host2::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.event-host .backhome{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+.event-host .backhome:hover{
+  background-color: black;
+  color: white;
+}

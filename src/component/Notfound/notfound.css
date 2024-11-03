@@ -1,0 +1,59 @@
+.notfound{
+  padding: 10px 0 40px 0;
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+.notfound .not-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: fit-content;
+  font-family: 'mainfont',sans-serif;
+  margin: 0 auto;
+}
+
+.notfound .not-content h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.notfound .not-content .not-title{
+  padding: 5px 0 20px 0;
+}
+
+.notfound .not-content img{
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.notfound .not-content .not-img{
+  padding: 10px 0;
+}
+
+.notfound .not-content p{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.notfound .not-content .not-btn{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notfound .not-content .not-btn button{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 7px 20px;
+  background-color: #06ee9a;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+} .notfound .not-content .not-btn button:hover{
+  padding: 7px 25px;
+  box-shadow: 1px 1px 10px #06ee9a;
+}
